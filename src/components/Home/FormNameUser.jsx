@@ -33,7 +33,7 @@ const FormNameUser = () => {
 
           <p>To get started, give me your name</p>
         </div>
-
+        
         <form onSubmit={handleSubmit}>
           <input className="login__input" ref={inputName} type="text" placeholder="your name..." />
           <button className="login__button">Comenzar</button>
