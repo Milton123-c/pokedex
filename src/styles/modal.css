@@ -1,0 +1,270 @@
+
+.modal{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.modal__container{
+    width: 80vw;
+    background-color: rgb(240, 238, 238);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+    padding: 1em;
+}
+
+.background__dinamic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(151, 12, 12);
+}
+
+.background__dinamic img{
+    width: 80%;
+    opacity: 0;
+}
+
+.modal__img{
+    width: 100%;
+    z-index: 1;
+}
+.modal__img img{
+    width: 100%;
+}
+
+.modal__body{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.modal__body p{
+    padding: 1em;
+    border: 1px solid black;
+    width: min-content;
+}
+
+.underline{
+    position: relative;
+    height: min-content;
+    width: 100%;
+}
+
+.x{
+    position: absolute;
+    color: #fff;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 1.5em;
+    background-color: rgb(231, 11, 11);
+    z-index: 11;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-in-out;
+}
+
+.x:hover{
+    background-color: rgb(231, 55, 11);
+    transform: scale(1.1);
+}
+
+.underline  > .h2{
+    position: absolute;
+    z-index: 1;
+    background-color:  rgb(240, 238, 238);
+    padding: 0 0.5em;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: rgb(161, 22, 22);
+}
+
+.underline  > h2:nth-child(3){
+     opacity: 0;
+}
+
+.underline > div{
+    position: absolute;
+    top: 51%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.cont__type{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.cont__type div{
+    text-align: center;
+    display: grid;
+    gap: 0.5em;
+    justify-items: center;
+    height: min-content;
+}
+.cont__type div p{
+    height: min-content;
+}
+
+.cont__type div ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.stats{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+}
+
+ .stats__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+ .stats__title > span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+ .stats__title > span:nth-child(1){
+    font-weight: 800;
+    font-size: 2em;
+}
+
+
+ .stats__title > div{
+    width: 50px;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+ .stats__title > div > img{
+    width: 100%;
+    transform: rotate(-15deg);
+}
+
+
+.stats > div > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.span{
+    font-weight: 800;
+}
+.moves{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+}
+
+progress[value] {
+
+    /* Reinicializar estilos */
+  
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    /* Quitar borde en Firefox */
+  
+    border: none;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: rgb(212, 212, 210);
+    border-radius: 0.5em;
+}
+
+  progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(to right top, #7f9220, #8ba71d, #96bd1a, #a0d416, #a8eb12);
+    border-radius: 0.5em;
+}
+
+.progress{
+    width: 100%;
+    height: 2em;
+}
+
+.moves ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+
+
+.color0{
+    background-color:hotpink;
+    color: #fff;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+}
+
+.color1{
+    background-color: darkblue;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 0.3em;
+}
+.color2{
+    background-color: purple;
+    color: #fff;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+}
+.color3{
+    background-color: chartreuse;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+}
+
+.color4{
+    background-color: rgb(202, 17, 17);
+    color: #fff;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+}
+
+.color5{
+    background-color: rgb(151, 153, 37);
+    color: #fff;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+}
+
+@media (min-width: 525px) {
+    .modal__container{
+        width: 80%;
+    }
+
+    .modal__img{
+        width: 150px;
+    }
+
+    .background__dinamic > img{
+        width: 120px;
+    }
+}
