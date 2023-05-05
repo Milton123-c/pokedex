@@ -12,6 +12,7 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
 }
 
 .container:hover{
@@ -27,6 +28,7 @@
     background-color: #9b0a63;
     border-bottom-left-radius: 1.5em;
     color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -54,7 +56,7 @@
     width: 101%;
     top: 0;
     left: -1px;
-    background-color: rebeccapurple;
+   
 }
 
 .background__img{
@@ -85,6 +87,7 @@
     font-size: 2em;
     font-weight: 800;
     color: red;
+    text-transform: capitalize;
 }
 
 .poke__info li:nth-child(2){

@@ -1,6 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import '../styles/containerPoke.css'
+import '../styles/color.css'
 
 export const OnePoke = ({pokemon}) => {
 
@@ -18,7 +19,7 @@ export const OnePoke = ({pokemon}) => {
 
   return (
     <article className="container" onClick={handleOpenModal}>
-
+<span className="see">See pokemon</span>
         <div className="container__img">
             <img className="poke__img" src={pokemon?.sprites.other.dream_world.front_default} alt="name" />
         </div>
@@ -52,7 +53,7 @@ export const OnePoke = ({pokemon}) => {
 
         </article>
 
-         <div className="background__poke">
+         <div className={`background__poke ${pokemon?.types[0].type.name}`}>
                  <img className="background__img" src={pokemon?.sprites.other.dream_world.front_default} alt="name" />
          </div>
 

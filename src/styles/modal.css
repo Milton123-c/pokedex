@@ -18,6 +18,8 @@
     align-items: center;
     gap: 0.7em;
     padding: 1em;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+    border-radius: 1em;
 }
 
 .background__dinamic{
@@ -26,6 +28,8 @@
     left: 0;
     width: 100%;
     background-color: rgb(151, 12, 12);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .background__dinamic img{

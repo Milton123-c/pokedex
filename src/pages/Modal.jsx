@@ -26,7 +26,7 @@ const Modal = () => {
         
       <article className="modal__container">
       <button onClick={handleClose} className="x">X</button>
-        <div className="background__dinamic">
+        <div className={`background__dinamic ${pokemon?.types[0].type.name}`}>
           <img src={pokemon?.sprites.other.dream_world.front_default} alt="" />
         </div>
 
